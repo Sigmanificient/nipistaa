@@ -1,5 +1,14 @@
 # Nipistaa
 
+![Lines of code](https://tokei.rs/b1/github/Sigmanificient/nipistaa?category=code&path=nipistaa)
+![Repo Size](https://img.shields.io/github/repo-size/Sigmanificient/nipistaa)
+![GitHub last commit](https://img.shields.io/github/last-commit/Sigmanificient/nipistaa)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Sigmanificient/nipistaa?label=commits)
+![GitHub](https://img.shields.io/github/license/Sigmanificient/nipistaa)
+![Discord](https://img.shields.io/discord/881531065859190804)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![gitmoji](https://img.shields.io/badge/gitmoji-%20🚀%20💀-FFDD67.svg)
+
 A pincer library that provides templates commands for the [Pincer](https://github.com/pincer-org/pincer) API wrapper.
 
 ## Usage example
