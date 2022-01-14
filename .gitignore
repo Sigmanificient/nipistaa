@@ -1,0 +1,10 @@
+# PyCharm configuration files
+.idea
+
+# Python environment & cache
+__pycache__
+*.py[cod]
+venv
+
+# Dev dev bot
+dev
