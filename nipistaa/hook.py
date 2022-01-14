@@ -1,38 +1,12 @@
-from .templates import templates
-from typing import Type, Callable, Optional, Union
+from typing import Callable, Optional, Union
 
 from pincer import Client, command, ChatCommandHandler
 from pincer.commands import Group, Subgroup
 from pincer.objects import ThrottleScope
 
-TC = Type[Client]
-
-
-def guild_command(guild: int):
-    def decorator(
-            func=None,
-            *,
-            name: Optional[str] = None,
-            description: Optional[str] = "Description not set",
-            enable_default: Optional[bool] = True,
-            cooldown: Optional[int] = 0,
-            cooldown_scale: Optional[float] = 60.0,
-            cooldown_scope: Optional[ThrottleScope] = ThrottleScope.USER,
-            parent: Optional[Union[Group, Subgroup]] = None
-    ):
-        return command(
-            func=func,
-            name=name,
-            description=description,
-            enable_default=enable_default,
-            guild=guild,
-            cooldown=cooldown,
-            cooldown_scale=cooldown_scale,
-            cooldown_scope=cooldown_scope,
-            parent=parent
-        )
-
-    return decorator
+from .templates import templates
+from .utils import TC
+from .utils.guild_command import guild_command
 
 
 def hook(
