@@ -18,6 +18,7 @@ import nipistaa
 from nipistaa.templates import ping
 from pincer import Client
 
+
 @nipistaa.hook(ping, guild=1234567890)
 class Bot(Client):
 
@@ -29,6 +30,9 @@ class Bot(Client):
 if __name__ == '__main__':
     Bot('...').run()
 ```
+[file](/examples/bot.py)
+
+<br>
 
 > or even make it with bare python Client!
 ```py
@@ -38,8 +42,11 @@ from pincer import Client
 Bot = nipistaa.hook('ping', guild=1234567890)(Client)
 Bot('...').run()
 ```
+[file](/examples/client.py)
 
-> want to use nipistaa withing a Cog? No problem.
+<br>
+
+> want  to use nipistaa withing a Cog? No problem.
 
 ```py
 from pincer import command
@@ -60,3 +67,4 @@ class MyBeautifulCog:
 
 setup = MyBeautifulCog
 ```
+[file](/examples/cogs/bot.py)
